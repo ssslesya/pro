@@ -1,0 +1,72 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Регистрация водителя</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>PROкатим</h3>
+            </div>
+            <div class="card-header">
+                <h3>Регистрация водителя</h3>
+            </div>
+            <div class="card-body">
+                <div class="d-flex justify-content-center links">
+                    <p id="message"></p>
+                </div>
+                <form onsubmit="return false;">
+
+
+                    <div class="input-group form-group">
+                        <input type="text" class="form-control" placeholder="ФИО" id="fullname" required maxlength="50" pattern="([0-9_.-]{10})">
+                    </div>
+                    <div class="input-group form-group">
+                        <input type="text" class="form-control" placeholder="серия и номер паспорта" id="passport" required maxlength="50" pattern="([0-9]{10})">
+                    </div>
+                    <div class="input-group form-group">
+                        <input type="text" class="form-control" placeholder="водительские права" id="license" required maxlength="50" pattern="([0-9]{10})">
+                    </div>
+                    <input type="text" class="form-control" placeholder="Модель и номер машины" id="car" required maxlength="50">
+
+                    <legend ><p>Тариф</p>
+                        <select id="tarif" style="display: block;
+                                        margin-left: auto;
+                                        margin-right: auto">
+                            <option value="1">Стандарт</option>
+                            <option value="2">Комфорт</option>
+                            <option value="3">Комфорт+</option>
+                            <option value="4">Детский</option>
+                        </select>
+                    </legend>
+
+                    <div class="form-group">
+                        <input type="submit" value="Готово" class="btn float-right login_btn" onclick="reg()">
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-center links">
+                    <a href="client0.html">Вернуться назад</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/driver/auth.js"></script>
+</body>
+</html>

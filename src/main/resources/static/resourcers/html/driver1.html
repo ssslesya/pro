@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Driver</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/account.css">
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">PROкатим</a>
+  <div class="card-footer">
+    <div class="d-flex justify-content-center links">
+      <a href="client0.html">Завершить смену</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="d-flex justify-content-center h-100">
+    <div class="card-order">
+      <div class="card-header">
+        <h3 style="font-size:18px">Ближайшие заказы:</h3>
+
+      </div>
+
+      <div id="yandexmap" style="width: 500px; height: 500px"></div>
+
+      <div class="card-body">
+
+        <legend ><p>Заказ</p>
+          <select id="order" style="display: block;
+                                        margin-left: auto;
+                                        margin-right: auto">
+            <option value="1">Заказ 1</option>
+            <option value="2">Заказ 2</option>
+            <option value="3">Заказ 3</option>
+          </select>
+        </legend>
+
+        <div class="form-group">
+          <input type="submit" value="Начать заказ" class="btn float-right login_btn" onclick="startRide()">
+        </div>
+        <form action="#">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=da944d30-f1d1-4ee1-886b-2be228b6dcf4&lang=ru_RU" type="text/javascript"></script>
+<script src="../js/driver/createRide.js"></script>
+<script src="../js/maps/mapsOrders.js"></script>
+
+</body>
+</html>
